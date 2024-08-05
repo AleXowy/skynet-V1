@@ -86,9 +86,9 @@ public class Main {
                 case "2" -> car.addFuel();
                 case "3" -> System.exit(0);
             }
-            System.out.println();
-            System.out.println("Aktualny przebieg to " + car.getMileage() + "km\nPozostały zasięg to:" +  Math.round(car.getRange())+ "km" + "\nPozostało " + Math.round(car.getTank())+ "L/" + car.getTankCapacity());
-            System.out.println();
+            //System.out.println();
+            System.out.println("\nAktualny przebieg to " + car.getMileage() + "km\nPozostały zasięg to:" +  Math.round(car.getRange())+ "km" + "\nPozostało " + Math.round(car.getTank())+ "L/" + car.getTankCapacity() + "\n");
+           // System.out.println();
         }
     }
 }
