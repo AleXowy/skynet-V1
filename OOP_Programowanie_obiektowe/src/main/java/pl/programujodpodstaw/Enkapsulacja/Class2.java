@@ -1,4 +1,4 @@
-package pl.Enkapsulacja;
+package pl.programujodpodstaw.Enkapsulacja;
 
 public class Class2 {
 

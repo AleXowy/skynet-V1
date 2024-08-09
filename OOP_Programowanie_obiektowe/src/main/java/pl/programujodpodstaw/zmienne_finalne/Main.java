@@ -1,4 +1,4 @@
-package pl.zmienne_finalne;
+package pl.programujodpodstaw.zmienne_finalne;
 
 import java.util.Scanner;
 

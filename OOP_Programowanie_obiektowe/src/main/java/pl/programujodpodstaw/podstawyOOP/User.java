@@ -1,4 +1,4 @@
-package pl.alexowymichal;                                                                                                    // Informacja w jakim pakiecie znajduje się dana klasa
+package pl.programujodpodstaw.podstawyOOP;                                                                                                    // Informacja w jakim pakiecie znajduje się dana klasa
 //                                                                                                                      // Clasa skłąda sie z Pul Classy oraz metod classy
 //                                                                                                                      // Classa jest skrukturą która może przechowywać dane. Jeżeli mamy urzytkownika, możemy zebrać wszstkie infomracje które go dotyczną w klasie i potem tworzyć kolejne instacje tej klasy dla kolejnych urzytkowników.
 public class User {                                                                                                     // możemy również przeprwadzać operacje na Classach, za pomocą metod. żeby przeprwadz operację na Classie tworzymy metode
