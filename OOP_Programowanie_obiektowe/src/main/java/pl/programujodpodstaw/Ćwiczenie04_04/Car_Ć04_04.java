@@ -10,26 +10,29 @@ public class Car_Ć04_04 {
     private String color;
     private int mileage;
     private final int maxSpeed;
-    private double rage;
+    private double range;
     private final int maxRange;
     private double fuelUsage;
     private double fuelUsedInLiters;
     private double tank;
     private final double tankcapacity;
     private double rageInLiters;
+    private double actualRange;
 
-    public Car_Ć04_04(String make, String model, int year, String color, int maxSpeed, int rage, double fuelUsage , double tank) {
+    public Car_Ć04_04(String make, String model, int year, String color, int maxSpeed, int range, double fuelUsage , double tank) {
         this.make = make;
         this.model = model;
         this.year = year;
         this.color = color;
         this.maxSpeed = maxSpeed;
-        this.rage = rage;
-        this.maxRange = rage;
+        this.range = range;
+        this.maxRange = range;
         this.fuelUsage = fuelUsage;
         this.tank = tank;
         this.tankcapacity = tank;
     }
+
+
 
     public String getMake() {
         return make;
@@ -55,8 +58,8 @@ public class Car_Ć04_04 {
         return maxSpeed;
     }
 
-    public double getRage() {
-        return rage;
+    public double getRange() {
+        return range;
     }
 
     public int getMileage() {
@@ -87,12 +90,19 @@ public class Car_Ć04_04 {
         return tankcapacity;
     }
 
+    public double getActualRange() {
+        return actualRange;
+    }
+
+    public void setActualRange(double actualRange) {
+        this.actualRange = actualRange;
+    }
 
     public void drive(int distance) {
-           if (rage > 0 && rage >= distance && tank > 0){
+           if (range > 0 && range >= distance && tank > 0){
             mileage += distance;
-            rage = (tank / fuelUsage) * 100;
-            rage -= distance;
+               range = (tank / fuelUsage) * 100;
+               range -= distance;
             fuelUsedInLiters = ((double) distance / 100) * fuelUsage;
             tank -= fuelUsedInLiters;
          } else {
@@ -107,10 +117,11 @@ public class Car_Ć04_04 {
         if (tank < tankcapacity) {
             rageInLiters += (fuel / fuelUsage) * 100;
             tank += fuel;
-            rage += (fuel / fuelUsage) * 100;
+            range += (fuel / fuelUsage) * 100;
         } else {
             System.out.println("Bak pełny!");
         }
+
 
 //        System.out.println("Podaj na ile kilometrów dolewasz paliwa?");
 //        Scanner scanner = new Scanner(System.in);
@@ -124,6 +135,7 @@ public class Car_Ć04_04 {
 //        }
 
    }
+
 
 
 }
