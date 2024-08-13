@@ -1,4 +1,4 @@
-package pl.programujodpodstaw.zmienne_finalne;
+package pl.programujodpodstaw.zmienne_metody_Klasy_finalne;
 
 public class User {
 

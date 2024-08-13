@@ -7,5 +7,6 @@ public class Main {
       user.name = "Kamil";
 
 
+
   }
 }
