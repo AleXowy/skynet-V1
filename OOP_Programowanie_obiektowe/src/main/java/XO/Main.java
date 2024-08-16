@@ -144,7 +144,7 @@ public class Main {
          while (skynetMove){
          int randomMove = random.nextInt(9);
              if ((!gameArea.get(2).contains("X")) && !(gameArea.get(2)).contains("O") &&
-             gameArea.get(0).equals("X") && gameArea.get(1).equals("X")) {
+             gameArea.get(0).contains("X") && gameArea.get(1).contains("X")) {
                  gameArea.set(2, "O ");
                  skynetMove = false;
                  playerMove = true;
@@ -209,7 +209,7 @@ public class Main {
                  skynetMove = false;
                  playerMove = true;
              } else if ((!gameArea.get(8).contains("X")) && !gameArea.get(8).contains("O") &&
-              gameArea.get(6).contains("X") && gameArea.get(7).contains("X")) {
+             gameArea.get(6).contains("X") && gameArea.get(7).contains("X")) {
                  gameArea.set(8, "O ");
                  skynetMove = false;
                  playerMove = true;
