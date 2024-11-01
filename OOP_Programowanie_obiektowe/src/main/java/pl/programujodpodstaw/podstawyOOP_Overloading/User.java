@@ -48,7 +48,7 @@ public class User {                                                             
 //
 //        public void hello() {
 //                                                                                                           //public (modyfikator dostępu) void (typ który zostanie zwrócony) ello to nazwa
-//            System.out.println("Hello");                                                                                        //  etoda o nazwie hello wyświetli nm tekst Hello(zostanie użyty w main.java
+//            System.out.println("Hello");                                                                                        //  metoda o nazwie hello wyświetli nm tekst Hello(zostanie użyty w main.java
 //
 //        }
 //
